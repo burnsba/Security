@@ -22,7 +22,7 @@
 // function to call
 void f()
 {
-  printf("now in f.\n");
+	printf("now in f.\n");
 	exit(0);
 }
 
@@ -101,3 +101,28 @@ int main()
 // 0x40059d <main+24>              mov    $0x0,%eax
 // 0x4005a2 <main+29>              pop    %rbp
 // 0x4005a3 <main+30>              retq
+
+// gcc version 4.7.2 (Debian 4.7.2-5) 
+
+// $ lscpu
+// Architecture:          x86_64
+// CPU op-mode(s):        32-bit, 64-bit
+// Byte Order:            Little Endian
+// CPU(s):                4
+// On-line CPU(s) list:   0-3
+// Thread(s) per core:    2
+// Core(s) per socket:    2
+// Socket(s):             1
+// NUMA node(s):          1
+// Vendor ID:             GenuineIntel
+// CPU family:            6
+// Model:                 37
+// Stepping:              5
+// CPU MHz:               2527.259
+// BogoMIPS:              5053.89
+// Virtualization:        VT-x
+// L1d cache:             32K
+// L1i cache:             32K
+// L2 cache:              256K
+// L3 cache:              3072K
+// NUMA node0 CPU(s):     0-3
