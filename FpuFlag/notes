@@ -1,5 +1,5 @@
-Integer divide by zero will fire SIGFPE.
+Integer divide by zero (DBZ) will fire SIGFPE, regardless of MXCSR.
 
-Double divide by zero will give a result, Infinity.
+Double DBZ will give a result, Infinity, regardless of MXCSR.
 
-SIMD divide by zero may or may not do anything. If DBZ flag is unmasked in MXCSR, SIGFPE will fire. Otherwise, if it is set, SIGFPE will not fire.
+SIMD DBZ may or may not do anything. If DBZ flag is unmasked in MXCSR, SIGFPE will fire. Otherwise, if it is set, SIGFPE will not fire.
