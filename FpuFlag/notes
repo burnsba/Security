@@ -1,0 +1,5 @@
+Integer divide by zero will fire SIGFPE.
+
+Double divide by zero will give a result, Infinity.
+
+SIMD divide by zero may or may not do anything. If DBZ flag is unmasked in MXCSR, SIGFPE will fire. Otherwise, if it is set, SIGFPE will not fire.
