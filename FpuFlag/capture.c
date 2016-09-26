@@ -1,4 +1,4 @@
-// MIT license, etc etc
+// apache license, etc etc
 
 // compile with: gcc -O0 -msse2 capture.c
 
